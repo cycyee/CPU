@@ -1413,7 +1413,7 @@
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(630,770)" name="Tunnel">
+    <comp lib="0" loc="(630,730)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="IB"/>
       <a name="labelfont" val="SansSerif bold 12"/>
@@ -2087,10 +2087,13 @@
     <wire from="(630,1020)" to="(660,1020)"/>
     <wire from="(630,240)" to="(650,240)"/>
     <wire from="(630,300)" to="(660,300)"/>
-    <wire from="(630,770)" to="(630,810)"/>
+    <wire from="(630,730)" to="(640,730)"/>
+    <wire from="(630,750)" to="(630,810)"/>
+    <wire from="(630,750)" to="(640,750)"/>
     <wire from="(630,830)" to="(630,860)"/>
     <wire from="(640,180)" to="(650,180)"/>
     <wire from="(640,60)" to="(640,70)"/>
+    <wire from="(640,730)" to="(640,750)"/>
     <wire from="(640,830)" to="(640,860)"/>
     <wire from="(640,990)" to="(660,990)"/>
     <wire from="(650,520)" to="(710,520)"/>
