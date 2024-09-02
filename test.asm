@@ -1,0 +1,3 @@
+LI X1, 0x6
+LI X2, 0XFFF
+SW X2, 0(X1)

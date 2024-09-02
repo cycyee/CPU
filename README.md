@@ -1,6 +1,6 @@
 # Project 3 README
 
-Student 1: Calvin Yee 1 (123456789)
+Student 1: Calvin Yee 1 (919768747)
 Student 2: Anvi Kalucha (123456798)
 
 ## Project Status
@@ -8,14 +8,14 @@ This the current status of the project ...
 Adder15 circuit done, made from 3 5-bit CLA adders.
 ALU15 circuit done.
 REG15 done, Flags8 done, IMM15 Done, Decoder Done. 
-CPU working with U, R, I type instructions. 
+CPU working with S, B, U, R, I type instructions.
 
 ## Known Issues
 The project fails to function properly in ...
-Some issues with control flow. 
+Some issues with control flow - I believe some branch-flag operations may not be firing. 
 
 ## References
-Mainly textbook used as ref. 
+Mainly textbook used as ref.
 https://www.binaryhexconverter.com/hex-to-binary-converter for getting instr.
 
 
