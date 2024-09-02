@@ -111,4 +111,4 @@ IB is populated only on fetch and is written directly from the DATAIN.
 
 Registers are only written to on writeback, and have sources such as IMM, ALURes, or PC + 1, or DATAIN (for lw)
 
-DATAOUT is written to only when SW is active, and is tri state buffered otherwise. 
+DATAOUT is written to only when SW is active, and is tri state buffered otherwise. IRQ and I/E flags not yet implemented. 
