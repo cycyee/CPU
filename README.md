@@ -1,64 +1,19 @@
 # Project 3 README
-
-Student 1: Calvin Yee 1 (919768747)
-Student 2: Anvi Kalucha (123456798)
+Developer 1: Calvin Yee
 
 ## Project Status
-This the current status of the project ...
-Adder15 circuit done, made from 3 5-bit CLA adders.
-ALU15 circuit done.
-REG15 done, Flags8 done, IMM15 Done, Decoder Done. 
 CPU working with S, B, U, R, I type instructions.
 
-## Known Issues
-The project fails to function properly in ...
-Some issues with control flow - I believe some branch-flag operations may not be firing. 
+##
+Instructions for running CPU program: 
 
-## References
-Mainly textbook used as ref.
-https://www.binaryhexconverter.com/hex-to-binary-converter for getting instr.
+  Pull from logisim-evolution current repository or download pre-built binary (Java) 
+  Link: https://github.com/logisim-evolution/logisim-evolution/releases
+  Run binary or write "gradlew run" to start Logisim-Evolution
+  Open the .circ file and use Python assembler to build .dat files for loading if you want to run personalized ASM testing files. 
 
-
-## Generative AI Use
-
-### Prompt 1
-What does Oscillation Apparent mean in Logisim Evolution?
-
-### Response 1
-In Logisim Evolution, "Oscillation Apparent" is a warning that indicates a potential problem in your circuit related to signal instability or unintended feedback loops. This occurs when the simulation detects that a signal is rapidly changing states (oscillating) in a way that suggests there might be a logical error, such as:
-
-Feedback Loops: When a signal is fed back into itself without proper timing or control, causing it to rapidly flip between states.
-
-Unstable Combinational Logic: If combinational logic has paths that create loops without any delay elements (like flip-flops), the circuit might oscillate, as the output continuously affects its own input.
-
-Race Conditions: These happen when the timing of signals causes conflicts, leading to unpredictable behavior. This can result in parts of the circuit repeatedly switching states in response to the same signal change.
-
-Consequences
-Performance Issues: The simulation might slow down significantly because of the rapid changes it has to compute.
-Incorrect Behavior: The circuit might not perform as expected, leading to wrong outputs or failure to stabilize in a correct state.
-Troubleshooting Oscillations
-To address oscillation warnings, you can:
-
-Check for Feedback Loops: Ensure that any feedback paths in your circuit are properly controlled by flip-flops or other sequential logic elements to break any potential for oscillation.
-
-Add Delay Elements: If necessary, introduce flip-flops or latches to control the timing of signals in feedback loops or to break combinational cycles.
-
-Use Stable Logic Design: Ensure that your combinational logic is well-designed, with clear, stable outputs that don’t depend on rapidly changing inputs.
-
-Simplify Your Circuit: Sometimes simplifying the logic or breaking down complex combinational logic into smaller, more manageable parts can resolve oscillations.
-
-Example
-If you have a circuit where an output directly feeds back into an input without any delay or synchronization, it might cause the output to oscillate rapidly between 0 and 1. Adding a flip-flop in the feedback path could stabilize the circuit by ensuring that the output changes only at clock edges, avoiding oscillation.
-
-By understanding and addressing the cause of oscillation, you can ensure that your circuit functions correctly and efficiently in Logisim Evolution.
-### Changes 1
-This did not help me debug, and eventually i found the issue on my own. 
-
-### Prompt 2
-
-### Response 2
-
-### Changes 2
+## 
+Subcircuit implementations below:
 
 ### Adder15
 Used an ADDER5 circuit to make the 5 bit cla adder, then chained 3 of them together. 
